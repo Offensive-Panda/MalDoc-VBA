@@ -1,0 +1,13 @@
+Sub Workbook_Open()
+ 
+Dim iURL
+Dim objShell
+
+iURL = "Put url here"
+
+Set objShell = CreateObject("Shell.Application")
+objShell.ShellExecute "chrome.exe", iURL, "", "", 1
+
+End Sub
+
+
